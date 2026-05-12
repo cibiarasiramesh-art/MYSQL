@@ -1,0 +1,25 @@
+SELECT id,first_name FROM actors LIMIT 20;
++--------+-----------------+
+| id     | first_name      |
++--------+-----------------+
+| 519105 | !Nqate          |
+| 658266 | 'Agent' Ava     |
+| 382092 | 'Amarillo Slim' |
+|  88968 | 'Angry' Joe     |
+| 379612 | 'Arm' Suvinit   |
+| 704236 | 'Auntie'        |
+|   3324 | 'Babe'          |
+| 597289 | 'Baby' Carmen   |
+|  83244 | 'Bear'          |
+| 446427 | 'Big Al'        |
+| 172498 | 'Big Bill'      |
+| 175305 | 'Big Daddy'     |
+| 383530 | 'Big Jack'      |
+|  93704 | 'Big Patcheen'  |
+| 231039 | 'Big Philly'    |
+| 382327 | 'Big Walter'    |
+| 302581 | 'Big'           |
+| 331071 | 'Big' Ben       |
+| 512895 | 'Big' Bill      |
+| 456830 | 'Big' Dale      |
++--------+-----------------+
