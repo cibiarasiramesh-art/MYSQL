@@ -1,0 +1,24 @@
+SELECT name,year FROM movies ORDER BY year LIMIT 20;
++--------------------------------------+------+
+| name                                 | year |
++--------------------------------------+------+
+| Traffic Crossing Leeds Bridge        | 1888 |
+| Roundhay Garden Scene                | 1888 |
+| Monkeyshines, No. 1                  | 1890 |
+| Monkeyshines, No. 3                  | 1890 |
+| Monkeyshines, No. 2                  | 1890 |
+| Duncan Smoking                       | 1891 |
+| Duncan or Devonald with Muslin Cloud | 1891 |
+| Duncan and Another, Blacksmith Shop  | 1891 |
+| Newark Athlete                       | 1891 |
+| Men Boxing                           | 1891 |
+| Monkey and Another, Boxing           | 1891 |
+| Fencing                              | 1892 |
+| Hand Shake, A                        | 1892 |
+| Boxing                               | 1892 |
+| Wrestling                            | 1892 |
+| Clown et ses chiens, Le              | 1892 |
+| Un bon bock                          | 1892 |
+| Prince de Galles, Le                 | 1892 |
+| Pauvre Pierrot                       | 1892 |
+| Man on Parallel Bars                 | 1892 |
