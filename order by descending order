@@ -1,0 +1,25 @@
+ SELECT name,year FROM movies ORDER BY year DESC LIMIT 20;
++-------------------------------------------+------+
+| name                                      | year |
++-------------------------------------------+------+
+| Harry Potter and the Half-Blood Prince    | 2008 |
+| War of the Red Cliff, The                 | 2007 |
+| Tripoli                                   | 2007 |
+| Spider-Man 3                              | 2007 |
+| Rapunzel Unbraided                        | 2007 |
+| Harry Potter and the Order of the Phoenix | 2007 |
+| Untitled Star Trek Prequel                | 2007 |
+| DragonBall Z                              | 2007 |
+| Back to School                            | 2006 |
+| 2176                                      | 2006 |
+| Band on the Run                           | 2006 |
+| Andrew Henry's Meadow                     | 2006 |
+| Big Bug Man                               | 2006 |
+| Bielski Brothers, The                     | 2006 |
+| Benjamin Button                           | 2006 |
+| Becoming Jane                             | 2006 |
+| Astrix et les Vikings                     | 2006 |
+| Balls of Courage                          | 2006 |
+| Big Baby                                  | 2006 |
+| Arthur, the Movie                         | 2006 |
++-------------------------------------------+------+
