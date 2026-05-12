@@ -1,0 +1,9 @@
+ DESCRIBE actors;
++------------+--------------+------+-----+---------+-------+
+| Field      | Type         | Null | Key | Default | Extra |
++------------+--------------+------+-----+---------+-------+
+| id         | int          | NO   | PRI | 0       |       |
+| first_name | varchar(100) | YES  | MUL | NULL    |       |
+| last_name  | varchar(100) | YES  | MUL | NULL    |       |
+| gender     | char(1)      | YES  |     | NULL    |       |
++------------+--------------+------+-----+---------+-------+
