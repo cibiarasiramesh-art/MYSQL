@@ -1,0 +1,12 @@
+ SHOW TABLES;
++------------------+
+| Tables_in_imdb   |
++------------------+
+| actors           |
+| cibi             |
+| directors        |
+| directors_genres |
+| movies           |
+| movies_directors |
+| movies_genres    |
+| roles            |
