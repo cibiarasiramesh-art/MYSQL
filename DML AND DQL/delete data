@@ -1,0 +1,11 @@
+
+mysql> DELETE FROM student WHERE name="cibi";
+Query OK, 1 row affected (0.061 sec)
+
+mysql> SELECT* FROM student;
++---------+------+------+------+
+| name    | dept | year | id   |
++---------+------+------+------+
+| MURUGAN | CSE  | 2004 |    2 |
+| SACHIN  | EEE  | 2004 |    3 |
++---------+------+------+------+
