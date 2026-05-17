@@ -1,0 +1,12 @@
+ALTER TABLE fav ADD COLUMN(color varchar(20));
+Query OK, 0 rows affected (0.319 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+DESCRIBE fav;
++-------+-------------+------+-----+---------+-------+
+| Field | Type        | Null | Key | Default | Extra |
++-------+-------------+------+-----+---------+-------+
+| name  | varchar(20) | YES  |     | NULL    |       |
+| id    | int         | YES  |     | NULL    |       |
+| color | varchar(20) | YES  |     | NULL    |       |
++-------+-------------+------+-----+---------+-------+
