@@ -1,0 +1,17 @@
+ DROP TABLE fav;
+Query OK, 0 rows affected (0.131 sec)
+
+mysql> show tables;
++------------------+
+| Tables_in_imdb   |
++------------------+
+| actors           |
+| cibi             |
+| directors        |
+| directors_genres |
+| movies           |
+| movies_directors |
+| movies_genres    |
+| roles            |
++------------------+
+8 rows in set (0.013 sec)
