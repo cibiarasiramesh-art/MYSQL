@@ -1,0 +1,12 @@
+update student set year=2004,id=3 where name="sachin";
+Query OK, 1 row affected (0.036 sec)
+Rows matched: 1  Changed: 1  Warnings: 0
+
+ SELECT* FROM student;
++---------+------+------+------+
+| name    | dept | year | id   |
++---------+------+------+------+
+| cibi    | it   | 2005 |    1 |
+| MURUGAN | CSE  | 2004 |    2 |
+| SACHIN  | EEE  | 2004 |    3 |
++---------+------+------+------+
