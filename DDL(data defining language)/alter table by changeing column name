@@ -1,0 +1,14 @@
+e right syntax to use near 'varcgar(20)' at line 1
+mysql> ALTER TABLE fav CHANGE color color_name varchar(20);
+Query OK, 0 rows affected (0.173 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+mysql> DESCRIBE fav;
++------------+-------------+------+-----+---------+-------+
+| Field      | Type        | Null | Key | Default | Extra |
++------------+-------------+------+-----+---------+-------+
+| name       | varchar(20) | YES  |     | NULL    |       |
+| id         | int         | YES  |     | NULL    |       |
+| color_name | varchar(20) | YES  |     | NULL    |       |
++------------+-------------+------+-----+---------+-------+
+3 rows in set (0.029 sec)
