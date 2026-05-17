@@ -1,0 +1,7 @@
+
+mysql> SELECT COUNT(year) FROM movies;
++-------------+
+| COUNT(year) |
++-------------+
+|      388269 |
++-------------+
