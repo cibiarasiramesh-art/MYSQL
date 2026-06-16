@@ -1,0 +1,7 @@
+SELECT actor_id, actor_name
+FROM actors
+WHERE actor_id > (
+    SELECT AVG(actor_id)
+    FROM actors
+)
+LIMIT 2;
