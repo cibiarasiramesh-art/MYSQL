@@ -1,0 +1,9 @@
+
+mysql> SELECT COUNT(*)actors
+    -> FROM ACTORS;
++--------+
+| actors |
++--------+
+| 817718 |
++--------+
+1 row in set (2.444 sec)
