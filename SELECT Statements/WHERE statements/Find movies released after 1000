@@ -1,0 +1,21 @@
+mysql> SELECT name
+    -> FROM MOVIES
+    -> WHERE year>1000
+    -> LIMIT 10;
++-------------------------------------+
+| name                                |
++-------------------------------------+
+| #28                                 |
+| #7 Train: An Immigrant Journey, The |
+| $                                   |
+| $1,000 Reward                       |
+| $1,000 Reward                       |
+| $1,000 Reward                       |
+| $1,000,000 Duck                     |
+| $1,000,000 Reward, The              |
+| $10,000 Under a Pillow              |
+| $100,000                            |
++-------------------------------------+
+10 rows in set (0.069 sec)
+
+mysql>
