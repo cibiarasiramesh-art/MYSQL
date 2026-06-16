@@ -1,0 +1,19 @@
+mysql> SELECT first_name,last_name
+    -> FROM ACTORS
+    -> WHERE first_name LIKE 'Tom'
+    -> LIMIT 10;
++------------+-----------+
+| first_name | last_name |
++------------+-----------+
+| Tom        | Abbott    |
+| Tom        | Abdo      |
+| Tom        | Abeel     |
+| Tom        | Abernethy |
+| Tom        | Abrams    |
+| Tom        | Adcock    |
+| Tom        | Addis     |
+| Tom        | Agnew     |
+| Tom        | Ahearne   |
+| Tom        | Ahima     |
++------------+-----------+
+10 rows in set (0.063 sec)
