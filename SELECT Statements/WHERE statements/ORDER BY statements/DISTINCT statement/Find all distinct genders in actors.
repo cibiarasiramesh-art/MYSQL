@@ -1,0 +1,10 @@
+mysql> SELECT DISTINCT gender
+    -> FROM actors
+    -> LIMIT 10;
++--------+
+| gender |
++--------+
+| M      |
+| F      |
++--------+
+2 rows in set (4.992 sec)
