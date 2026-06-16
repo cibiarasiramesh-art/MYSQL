@@ -1,0 +1,20 @@
+mysql> SELECT actors.first_name,movies.name
+    -> FROM actors
+    -> JOIN movies
+    -> ON actors.id=movies.id
+    -> LIMIT 10;
++------------+--------------------------+
+| first_name | name                     |
++------------+--------------------------+
+| Arturo     |  173 St.G.B. Blutschande |
+| Jorge      |  51 StGB                 |
+| Jack       |  a Maior                 |
+| Arturo     |  apkin gelin             |
+| Jindrich   |  arkadas                 |
+| Karol      |  arkadas                 |
+| Cosimo     |  arrivata la parigina    |
+| Gerhard    |  arrivato il cavaliere!  |
+| Hans Manou |  arrivato l'accordatore  |
+| Jack       |  arrivato mio fratello   |
++------------+--------------------------+
+10 rows in set (0.072 sec)
