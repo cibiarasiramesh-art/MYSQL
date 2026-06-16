@@ -1,0 +1,20 @@
+
+mysql> SELECT first_name
+    -> FROM actors
+    -> WHERE first_name LIKE 'A%'
+    -> LIMIT 10;
++-------------+
+| first_name  |
++-------------+
+| A           |
+| A Phai      |
+| A'da Alison |
+| A'e'au Semi |
+| A'leisha    |
+| A'lesha     |
+| A'leshia    |
+| A'ryen      |
+| A-jeong     |
+| A-ra        |
++-------------+
+10 rows in set (0.032 sec)
