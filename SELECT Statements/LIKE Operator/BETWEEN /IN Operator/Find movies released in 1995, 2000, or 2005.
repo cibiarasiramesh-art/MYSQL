@@ -1,0 +1,20 @@
+
+mysql> SELECT name
+    -> FROM movies
+    -> WHERE year IN ('1995','2000','2005')
+    -> LIMIT 10;
++---------------------------------------------------------------+
+| name                                                          |
++---------------------------------------------------------------+
+| #7 Train: An Immigrant Journey, The                           |
+| $pent                                                         |
+| & frres                                                       |
+| '70s: The Decade That Changed Television, The                 |
+| 'El Chicko' - der Verdacht                                    |
+| 'Java Madness' formerly titled 'Coffee Madness'               |
+| 'Ks-Bels' letmdjas: Romvri Jzsef                              |
+| 'N Sync & Britney Spears: Your #1 Video Requests... And More! |
+| 'N Sync: 'Ntimate Holiday Special                             |
+| 'N Sync: Live From Madison Square Garden                      |
++---------------------------------------------------------------+
+10 rows in set (0.053 sec)
