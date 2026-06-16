@@ -1,0 +1,24 @@
+mysql> DESCRIBE students;
+ERROR 1146 (42S02): Table 'imdb.students' doesn't exist
+mysql> DESCRIBE student;
++-------+-------------+------+-----+---------+-------+
+| Field | Type        | Null | Key | Default | Extra |
++-------+-------------+------+-----+---------+-------+
+| name  | varchar(20) | YES  |     | NULL    |       |
+| dept  | varchar(20) | YES  |     | NULL    |       |
+| year  | int         | YES  |     | NULL    |       |
+| id    | int         | YES  |     | NULL    |       |
++-------+-------------+------+-----+---------+-------+
+4 rows in set (0.028 sec)
+
+mysql> SELECT name,id
+    -> FROM student
+    -> WHERE year>2000
+    -> LIMIT 10;
++---------+------+
+| name    | id   |
++---------+------+
+| MURUGAN |    2 |
+| SACHIN  |    3 |
++---------+------+
+2 rows in set (0.201 sec)
