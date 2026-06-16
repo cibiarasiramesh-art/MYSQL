@@ -1,0 +1,9 @@
+
+mysql> SELECT AVG(year)
+    -> FROM student;
++-----------+
+| AVG(year) |
++-----------+
+| 2004.0000 |
++-----------+
+1 row in set (0.042 sec)
