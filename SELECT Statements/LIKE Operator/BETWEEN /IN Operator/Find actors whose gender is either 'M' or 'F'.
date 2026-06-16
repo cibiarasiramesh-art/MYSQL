@@ -1,0 +1,20 @@
+note: IN = shortcut for multiple OR conditions
+
+mysql> SELECT first_name
+    -> FROM actors
+    -> WHERE gender IN ('m','f')
+    -> LIMIT 10;
++------------+
+| first_name |
++------------+
+| Michael    |
+| Eloy       |
+| Dieguito   |
+| Antonio    |
+| José       |
+| Félix      |
+| Marcial    |
+| José       |
+| Francisco  |
+| Víctor     |
++------------+
