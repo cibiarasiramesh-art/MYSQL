@@ -1,0 +1,27 @@
+mysql> SELECT first_name,last_name
+    -> FROM actors
+    -> WHERE last_name LIKE '%Son'
+    -> LIMIT 10;
++------------+-------------+
+| first_name | last_name   |
++------------+-------------+
+| Kim Fupz   | Aakeson     |
+| Alan       | Aaronson    |
+| Scott      | Aaronson    |
+| Arthur     | Abelson     |
+| Andrew     | Ableson     |
+| Bill       | Ableson     |
+| Eric (I)   | Abrahamson  |
+| Peter      | Abrahamson  |
+| Eric       | Abrahamsson |
+| Hans       | Abrahamsson |
++------------+-------------+
+
+
+
+NOTE: to check case sensitive
+have to use 'binary'
+syntax:
+SELECT first_name, last_name
+FROM actors
+WHERE BINARY last_name LIKE '%son';
