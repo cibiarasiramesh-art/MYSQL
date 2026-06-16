@@ -1,0 +1,19 @@
+mysql> SELECT directors.first_name AS directors_name , movies.name AS movies_name
+    -> FROM directors
+    -> RIGHT JOIN movies ON
+    -> directors.id=movies.id
+    -> LIMIT 10;
++----------------+--------------------------+
+| directors_name | movies_name              |
++----------------+--------------------------+
+| NULL           |  173 St.G.B. Blutschande |
+| NULL           |  51 StGB                 |
+| NULL           |  a Maior                 |
+| NULL           |  apkin gelin             |
+| NULL           |  arkadas                 |
+| NULL           |  arkadas                 |
+| NULL           |  arrivata la parigina    |
+| NULL           |  arrivato il cavaliere!  |
+| NULL           |  arrivato l'accordatore  |
+| NULL           |  arrivato mio fratello   |
++----------------+--------------------------+
