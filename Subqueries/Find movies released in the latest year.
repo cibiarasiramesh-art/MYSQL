@@ -1,0 +1,13 @@
+mysql> SELECT name,year
+    -> FROM movies
+    -> WHERE year=(
+    -> SELECT MAX(year)
+    -> FROM movies
+    -> )
+    -> LIMIT 10;
++----------------------------------------+------+
+| name                                   | year |
++----------------------------------------+------+
+| Harry Potter and the Half-Blood Prince | 2008 |
++----------------------------------------+------+
+1 row in set (4.225 sec)
