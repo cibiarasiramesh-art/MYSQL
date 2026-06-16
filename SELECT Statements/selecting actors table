@@ -1,0 +1,29 @@
+mysql> DESCRIBE ACTORS;
++------------+--------------+------+-----+---------+-------+
+| Field      | Type         | Null | Key | Default | Extra |
++------------+--------------+------+-----+---------+-------+
+| id         | int          | NO   | PRI | 0       |       |
+| first_name | varchar(100) | YES  | MUL | NULL    |       |
+| last_name  | varchar(100) | YES  | MUL | NULL    |       |
+| gender     | char(1)      | YES  |     | NULL    |       |
++------------+--------------+------+-----+---------+-------+
+4 rows in set (0.204 sec)
+
+mysql> SELECT*
+    -> FROM ACTORS
+    -> LIMIT 10;
++----+------------+------------------------+--------+
+| id | first_name | last_name              | gender |
++----+------------+------------------------+--------+
+|  2 | Michael    | 'babeepower' Viera     | M      |
+|  3 | Eloy       | 'Chincheta'            | M      |
+|  4 | Dieguito   | 'El Cigala'            | M      |
+|  5 | Antonio    | 'El de Chipiona'       | M      |
+|  6 | José       | 'El Francés'           | M      |
+|  7 | Félix      | 'El Gato'              | M      |
+|  8 | Marcial    | 'El Jalisco'           | M      |
+|  9 | José       | 'El Morito'            | M      |
+| 10 | Francisco  | 'El Niño de la Manola' | M      |
+| 11 | Víctor     | 'El Payaso'            | M      |
++----+------------+------------------------+--------+
+10 rows in set (0.477 sec)
