@@ -1,0 +1,22 @@
+mysql> SELECT movies.name AS movie_names, movies_genres.genre
+    -> FROM movies
+    -> JOIN movies_genres
+    -> ON movies.id = movies_genres.movie_id
+    -> LIMIT 10;
++-------------------------------------+-------------+
+| movie_names                         | genre       |
++-------------------------------------+-------------+
+| #7 Train: An Immigrant Journey, The | Documentary |
+| #7 Train: An Immigrant Journey, The | Short       |
+| $                                   | Comedy      |
+| $                                   | Crime       |
+| $1,000 Reward                       | Western     |
+| $1,000,000 Duck                     | Comedy      |
+| $1,000,000 Duck                     | Family      |
+| $10,000 Under a Pillow              | Animation   |
+| $10,000 Under a Pillow              | Comedy      |
+| $10,000 Under a Pillow              | Short       |
++-------------------------------------+-------------+
+10 rows in set (0.173 sec)
+
+mysql>
