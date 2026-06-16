@@ -1,0 +1,21 @@
+
+mysql> SELECT movies.name,directors.first_name
+    -> FROM movies
+    -> JOIN directors
+    -> ON movies.id=directors.id
+    -> LIMIT 10;
++-------------------------------------------+----------------+
+| name                                      | first_name     |
++-------------------------------------------+----------------+
+| Chiquita, the Smallest Woman in the World | 'Philthy' Phil |
+| Dipsa, I                                  | 'Weird Al'     |
+| 14/1 endlos                               | A.             |
+| A&E Biography: Jackie Gleason - Great One | A.             |
+| Aaj Ki Dhara                              | A.             |
+| Abhimanyu                                 | A.             |
+| Advantages of Paternity, The              | A.             |
+| Adventures of Terence O'Rourke, The       | A.             |
+| Affairs of Miss Ping, Part I, The         | A.             |
+| Aftershocks                               | A.             |
++-------------------------------------------+----------------+
+10 rows in set (0.512 sec)
