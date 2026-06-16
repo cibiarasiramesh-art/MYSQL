@@ -1,0 +1,18 @@
+ Key rule (very important)
+WHERE → filters rows
+HAVING → filters grouped results//
+
+
+mysql> SELECT gender
+    -> FROM actors
+    -> GROUP BY gender
+    -> HAVING COUNT(*)>400000;
++--------+
+| gender |
++--------+
+| M      |
++--------+
+1 row in set (2.133 sec)
+
+
+
