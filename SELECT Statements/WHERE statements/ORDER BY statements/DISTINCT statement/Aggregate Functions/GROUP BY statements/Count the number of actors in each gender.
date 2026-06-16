@@ -1,0 +1,11 @@
+
+mysql> SELECT DISTINCT gender,COUNT(*)id
+    -> FROM actors
+    -> GROUP BY gender;
++--------+--------+
+| gender | id     |
++--------+--------+
+| M      | 513306 |
+| F      | 304412 |
++--------+--------+
+2 rows in set (4.256 sec)
