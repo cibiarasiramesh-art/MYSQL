@@ -1,0 +1,19 @@
+mysql> SELECT first_name
+    -> FROM actors
+    -> ORDER BY first_name ASC
+    -> LIMIT 10;
++-----------------+
+| first_name      |
++-----------------+
+| !Nqate          |
+| 'Agent' Ava     |
+| 'Amarillo Slim' |
+| 'Angry' Joe     |
+| 'Arm' Suvinit   |
+| 'Auntie'        |
+| 'Babe'          |
+| 'Baby' Carmen   |
+| 'Bear'          |
+| 'Big Al'        |
++-----------------+
+10 rows in set (0.012 sec)
