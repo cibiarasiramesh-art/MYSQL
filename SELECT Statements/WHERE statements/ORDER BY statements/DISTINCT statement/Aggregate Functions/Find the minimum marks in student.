@@ -1,0 +1,7 @@
+
+mysql> SELECT MIN(year)
+    -> FROM student;
++-----------+
+| MIN(year) |
++-----------+
+|      2004 |
