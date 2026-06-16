@@ -1,0 +1,19 @@
+mysql> SELECT name
+    -> FROM movies
+    -> WHERE year BETWEEN 2000 and 2010
+    -> LIMIT 10;
++-------------------------------------+
+| name                                |
++-------------------------------------+
+| #28                                 |
+| #7 Train: An Immigrant Journey, The |
+| $100,000 Pyramid, The               |
+| $300 y tickets                      |
+| $5.15/Hr.                           |
+| $pent                               |
+| $windle                             |
+| & frres                             |
+| '15'                                |
+| '60s Pop Rock Reunion               |
++-------------------------------------+
+10 rows in set (0.063 sec)
