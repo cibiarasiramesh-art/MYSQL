@@ -1,0 +1,24 @@
+mysql> SELECT name
+    -> FROM movies
+    -> WHERE rankscore BETWEEN 1 AND 5
+    -> LIMIT 10;
++----------------------------+
+| name                       |
++----------------------------+
+| $1,000,000 Duck            |
+| $50,000 Climax Show, The   |
+| $pent                      |
+| 'Columbia' Winning the Cup |
+| 'Crocodile' Dundee II      |
+| 'El Chicko' - der Verdacht |
+| 'If Only' Jim              |
+| 'Manos' the Hands of Fate  |
+| 'Ne gnstige Gelegenheit    |
+| 'Neath Canadian Skies      |
++----------------------------+
+10 rows in set (0.008 sec)
+
+mysql> SELECT name
+    -> FROM movies
+    -> WHERE rankscore BETWEEN 1 AND 5
+    -> LIMIT 10;
