@@ -1,0 +1,20 @@
+mysql> SELECT directors.first_name AS directors_name,movies.name AS movies_name
+    -> FROM directors
+    -> LEFT JOIN movies ON
+    -> directors.id=movies.id
+    -> LIMIT 10;
++----------------+-------------------------------------------+
+| directors_name | movies_name                               |
++----------------+-------------------------------------------+
+| 'Chico'        | NULL                                      |
+| 'Philthy' Phil | Chiquita, the Smallest Woman in the World |
+| 'Weird Al'     | Dipsa, I                                  |
+| A.             | 14/1 endlos                               |
+| A.             | A&E Biography: Jackie Gleason - Great One |
+| A.             | Aaj Ki Dhara                              |
+| A.             | Abhimanyu                                 |
+| A.             | Advantages of Paternity, The              |
+| A.             | Adventures of Terence O'Rourke, The       |
+| A.             | Affairs of Miss Ping, Part I, The         |
++----------------+-------------------------------------------+
+10 rows in set (0.006 sec)
