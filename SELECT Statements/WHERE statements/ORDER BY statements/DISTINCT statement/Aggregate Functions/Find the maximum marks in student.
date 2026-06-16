@@ -1,0 +1,8 @@
+
+mysql> SELECT MAX(year)
+    -> FROM student;
++-----------+
+| MAX(year) |
++-----------+
+|      2004 |
++-----------+
