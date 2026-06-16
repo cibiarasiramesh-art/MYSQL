@@ -1,0 +1,19 @@
+mysql> SELECT first_name
+    -> FROM actors
+    -> ORDER BY first_name DESC
+    -> LIMIT 10;
++------------------+
+| first_name       |
++------------------+
+| Þrúður           |
+| Þröstur Leó      |
+| Þröstur          |
+| Þráinn           |
+| Þórður           |
+| Þórðarson Garðar |
+| Þórunn           |
+| Þórunn           |
+| Þorsteinn        |
+| Þorsteinn        |
++------------------+
+10 rows in set (0.062 sec)
