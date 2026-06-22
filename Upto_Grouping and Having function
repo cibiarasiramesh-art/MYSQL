@@ -1,0 +1,239 @@
+CREATE TABLE employee(
+    emp_id INT PRIMARY KEY,
+    name VARCHAR(30),
+    age INT,
+    department VARCHAR(20),
+    city VARCHAR(20),
+    salary INT,
+    commission INT
+);
+
+INSERT INTO employee VALUES
+(101,'Arun',25,'IT','Chennai',50000,NULL),
+(102,'Priya',30,'HR','Madurai',60000,5000),
+(103,'Karthik',28,'IT','Chennai',70000,3000),
+(104,'Divya',35,'Sales','Coimbatore',45000,NULL),
+(105,'Raj',27,'HR','Chennai',55000,2000),
+(106,'Meena',32,'IT','Salem',80000,4000),
+(107,'Vijay',29,'Finance','Chennai',65000,NULL),
+(108,'Anu',26,'Sales','Madurai',48000,1000),
+(109,'Ravi',31,'IT','Coimbatore',75000,3500),
+(110,'Keerthi',24,'HR','Salem',52000,NULL),
+(111,'Suresh',33,'Finance','Chennai',72000,2500),
+(112,'Nisha',27,'IT','Madurai',68000,1500);
+
+
+/*SELECT*/
+SELECT*
+FROM employee;
+
+DESCRIBE employee;
+
+SELECT name,salary
+FROM employee;
+
+SELECT name,department,city
+FROM employee;
+
+SELECT DISTINCT department
+FROM employee;
+
+SELECT DISTINCT city
+FROM employee;
+
+select*
+FROM employee;
+
+/*WHERE*/
+
+SELECT name,salary
+ FROM employee
+ WHERE salary>60000;
+
+ SELECT name,age
+ FROM employee 
+ WHERE age>30;
+
+ SELECT name,department
+ FROM employee
+ WHERE department="it";
+
+ SELECT name,salary
+ FROM employee
+ WHERE salary>=55000;
+
+ SELECT name,department
+ FROM employee
+ WHERE department != "it";
+
+ /*NULL*/
+
+ SELECT name,commission
+ FROM employee
+WHERE commission IS NULL;
+
+SELECT name,commission
+FROM employee
+WHERE commission IS NOT NULL;
+
+/*LOGICAL OPERATOR*/
+
+/*AND*/
+select name,department,salary
+FROM employee
+where department="it" AND salary>65000;
+
+
+SELECT name,age,city
+FROM employee
+WHERE city="chennai" && age>25;
+
+/*or*/
+
+SELECT NAME,department
+FROM employee
+WHERE department="hr" || department="Finance";
+
+SELECT name,city
+FROM employee
+where city="CHENNAI" || city="madurai";
+
+/*not*/
+SELECT name,department
+FROM employee
+WHERE department!="SALES";
+
+/*ORDER BY*/
+SELECT name,salary
+FROM employee
+ORDER BY salary ASC;
+
+select name,salary
+FROM employee
+ORDER BY salary DESC;
+
+select name,age
+FROM employee
+ORDER BY age;
+
+SELECT name,department,salary
+FROM employee
+ORDER BY department && salary;
+
+/*limit*/
+ SELECT *
+ FROM employee
+ LIMIT 10;
+
+ select *
+ FROM employee
+ ORDER BY salary DESC
+ LIMIT 3;
+
+ /*OFFSET*/
+ SELECT *
+ FROM employee
+ LIMIT 3
+ OFFSET 4;
+
+ SELECT*
+ FROM employee
+ LIMIT 5
+ OFFSET 2;
+
+ /*AGGREGATE FUNCTION*/
+ SELECT COUNT(*)
+ FROM employee;
+
+ SELECT AVG(salary) AS avgsalary
+ FROM employee;
+
+ SELECT MAX(salary) AS maxsalary
+ FROM employee;
+
+ SELECT MIN(salary) AS minsalary
+ FROM employee;
+
+ SELECT SUM(salary) AS totalsalary
+ FROM employee;
+
+ /*group by*/
+
+ SELECT department,COUNT(*) as TOTAL_STRENGTH
+ FROM employee
+ group BY department;
+
+ SELECT department,AVG(salary)
+ FROM employee
+ GROUP BY department;
+
+ SELECT department,MAX(salary)
+ FROM employee
+ GROUP BY department;
+
+ SELECT department,MIN(salary)
+ FROM employee
+ GROUP BY department,name;
+
+ SELECT department, SUM(salary)
+ FROM employee
+ GROUP BY department;
+
+ SELECT city,COUNT(*)
+ from employee
+ GROUP BY city;
+
+ /*having*/
+ SELECT department,AVG(salary) AS avgsalary
+ FROM employee
+ GROUP BY department
+ HAVING AVG(salary)>65000;
+
+ SELECT department,COUNT(*) AS total
+ FROM employee
+ GROUP BY department
+ HAVING COUNT(*)>2;
+
+ SELECT city,COUNT(8) as total
+ FROM employee
+ GROUP BY city
+ HAVING COUNT(*)>3;
+
+ SELECT department,max(salary) AS maxsalary
+ FROM employee
+ GROUP BY department
+ HAVING MAX(salary)>70000;
+
+ /*combined queries*/
+
+ SELECT name as highiestsalaryname,salary
+ FROM employee
+ order by salary DESC
+ limit 3;
+
+ SELECT name,salary
+ FROM employee
+ ORDER BY salary DESC
+ limit 1
+ OFFSET 1;
+
+ select department,COUNT(*) AS total
+ FROM employee
+ GROUP BY department
+ORDER BY total DESC
+limit 1;
+/*
+SELECT city,AVG(salary)
+FROM employee
+
+WHERE AVG(salary)>60000;*/
+
+SELECT city, AVG(salary)
+FROM employee
+GROUP BY city
+HAVING AVG(salary) > 60000;
+
+SELECT department,SUM(salary)
+FROM employee
+GROUP BY department 
+HAVING SUM(salary)>150000;
