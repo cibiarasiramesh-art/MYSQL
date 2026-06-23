@@ -1,0 +1,27 @@
+/*cross join*/
+
+
+CREATE TABLE Product(
+    product_id INT,
+    product_name VARCHAR(20)
+);
+
+INSERT INTO Product VALUES
+(1,'Laptop'),
+(2,'Mobile');
+CREATE TABLE Color(
+    color_name VARCHAR(20)
+);
+
+INSERT INTO Color VALUES
+('Black'),
+('White'),
+('Silver');
+
+SELECT *
+FROM Product
+CROSS JOIN color ;
+
+SELECT COUNT(*) AS total_combibnation
+FROM product
+CROSS JOIN color;
