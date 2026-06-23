@@ -1,0 +1,63 @@
+CREATE TABLE employee(
+    emp_id INT PRIMARY KEY,
+    emp_name VARCHAR(20),
+    dept_id INT,
+    salary INT,
+    manager_id INT
+);
+
+INSERT INTO employee VALUES
+(1,'John',101,50000,4),
+(2,'Sam',102,60000,4),
+(3,'David',103,70000,5),
+(4,'Mike',101,80000,NULL),
+(5,'Alex',NULL,55000,NULL);
+
+CREATE TABLE department(
+    dept_id INT PRIMARY KEY,
+    dept_name VARCHAR(20)
+);
+
+INSERT INTO department VALUES
+(101,'IT'),
+(102,'HR'),
+(104,'Finance'),
+(105,'Marketing');
+
+
+/*left join*/
+SELECT*
+FROM employee;
+
+SELECT *
+FROM department;
+
+SELECT *
+FROM employee
+LEFT JOIN department
+ON employee.dept_id=department.dept_id;
+
+SELECT d.dept_name,e.emp_name
+FROM department d
+LEFT JOIN employee e
+ON d.dept_id=e.dept_id;
+
+/*SELECT IFNULL(d.dept_name,'no department') deptname,COUNT(d.dept_id) AS total
+FROM employee E
+LEFT JOIN department d
+ON d.dept_id=e.dept_id;
+GROUP BY d.dept_name;
+*/
+
+
+SELECT d.dept_name,COUNT(d.dept_id) total
+FROM department d
+LEFT JOIN employee e
+ON d.dept_id=e.dept_id
+GROUP BY d.dept_name;
+
+SELECT d.dept_id,IFNULL(e.emp_name,'null')
+FROM department d
+LEFT JOIN employee e
+ON d.dept_id=e.dept_id
+where e.emp_name IS NULL;
