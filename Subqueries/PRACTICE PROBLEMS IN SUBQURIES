@@ -1,0 +1,29 @@
+
+/*subquries*/
+CREATE TABLE employee(
+  emp_id INT,
+  emp_name VARCHAR(40),
+  dept_id INT
+);
+CREATE TABLE departments(
+  dept_id INT,
+  dept_name VARCHAR(30)
+);
+
+INSERT INTO employee 
+VALUES(1,'CIBI',11),
+(2,'GIRI',22),
+(3,'KARTHI',33);
+INSERT INTO departments
+VALUES(11,'it'),(22,'cse'),(33,'ece');
+
+SELECT*
+FROM employee;
+SELECT*
+FROM departments;
+
+SELECT e.emp_name 
+FROM employee e
+WHERE e.dept_id IN
+    (SELECT d.dept_id
+    FROM departments d);
