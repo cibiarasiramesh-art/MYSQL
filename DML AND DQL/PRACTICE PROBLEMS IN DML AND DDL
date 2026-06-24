@@ -1,0 +1,76 @@
+/*DDL
+
+CREATE*/
+
+CREATE TABLE student(
+  stu_id INT ,
+  stu_name VARCHAR(40),
+  marks INT
+
+);
+DESCRIBE student;
+
+ALTER TABLE student
+ADD city VARCHAR(40);
+
+DESCRIBE student;
+
+TRUNCATE TABLE student;
+DESCRIBE student;
+
+CREATE  TABLE department(
+  DEPT_ID int,
+  dept_name VARCHAR(40)
+);
+DESCRIBE department;
+
+/*alter*/
+
+ALTER TABLE student 
+ADD age INT;
+
+DESCRIBE student;
+
+ALTER TABLE department
+ADD location VARCHAR(40);
+DESCRIBE department;
+
+DESCRIBE student;
+
+INSERT INTO student 
+VALUES
+(11,'cibi',100,'chennai',21),
+(21,'samyu',99,'chennai',21);
+
+SELECT*
+FROM student ;
+
+/*TRUNCATE*/
+
+TRUNCATE TABLE student;
+SELECT*
+FROM student;
+
+/*DML
+
+INSERT*/
+
+INSERT INTO department
+VALUES (1,'it','chennai'),
+(2,'it','salem');
+SELECT*
+FROM department;
+
+/*uodate*/
+
+UPDATE department
+SET location='bangalore'
+WHERE DEPT_ID=1;
+SELECT*
+FROM department;
+
+/*DELETE*/
+DELETE FROM department
+WHERE location='salem';
+SELECT*
+FROM department;
